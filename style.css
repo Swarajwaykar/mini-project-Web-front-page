@@ -1,0 +1,260 @@
+/* style.css */
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background-color: #121212; /* Dark Background */
+    color: #ffffff; /* Light Text */
+}
+
+.header {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    position: relative;
+    padding: 2rem;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(0, 0, 0, 0.6);
+    border-radius: 20px;
+}
+
+.logo {
+    font-size: 1.8rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ffa500;
+}
+
+.cta-button {
+    padding: 0.8rem 1.5rem;
+    background: #ffa500;
+    color: #121212;
+    text-decoration: none;
+    border-radius: 10px;
+    font-weight: 700;
+    transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #ff7300;
+}
+
+.about-section, .accommodation-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #1a1a1a;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.about-content h2, .accommodation-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+    color: #ffa500;
+    text-transform: uppercase;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.about-content p, .accommodation-content p {
+    font-size: 1.2rem;
+    margin-bottom: 3rem;
+    color: #bbb;
+    max-width: 800px;
+    margin: auto;
+    line-height: 1.8;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.accommodation-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.feature-card {
+    background: #222;
+    padding: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    transition: transform 0.3s ease, background 0.3s ease;
+    animation: fadeIn 2.5s ease-in-out;
+}
+
+.feature-card:hover {
+    transform: scale(1.05);
+    background: #ffa500;
+    color: #121212;
+}
+
+.feature-card h3 {
+    color: #ffa500;
+    margin-bottom: 1rem;
+}
+
+.feature-card:hover h3 {
+    color: #121212;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+.gallery-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #1a1a1a;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.gallery-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    letter-spacing: 2px;
+    color: #ffa500;
+    text-transform: uppercase;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    padding: 2rem 0;
+}
+
+.gallery-grid img {
+    width: 100%;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.gallery-grid img:hover {
+    transform: scale(1.05);
+}
+
+.contact-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #1a1a1a;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border: none;
+    border-radius: 10px;
+    background: #222;
+    color: #ffffff;
+}
+
+.contact-form button {
+    padding: 1rem 2rem;
+    background: #ffa500;
+    color: #121212;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+    background: #ff7300;
+}
+/* style.css */
+.map-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #121212;
+}
+
+.map-content h2 {
+    font-size: 3rem;
+    margin-bottom: 1.5rem;
+    color: #ffa500;
+    text-transform: uppercase;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+iframe {
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.8);
+    animation: fadeIn 2s ease-in-out;
+}
+.booking-section {
+    padding: 4rem 2rem;
+    text-align: center;
+    background: #121212;
+}
+
+.booking-content h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #ffa500;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+.booking-form input, .booking-form button {
+    margin: 1rem 0;
+    padding: 1rem;
+    width: 100%;
+    max-width: 500px;
+    border: none;
+    border-radius: 10px;
+    background: #333;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.booking-form button:hover {
+    background: #ffa500;
+    cursor: pointer;
+}
+.payment-options {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+.payment-button {
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 10px;
+    background: #ffa500;
+    color: #121212;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.payment-button:hover {
+    background: #ff7f00;
+}
